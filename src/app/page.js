@@ -223,18 +223,26 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 来过的人数（实时）*/}
+       {/* 来过的人数（实时）*/}
         {visitCount !== null && (
-          <div className="absolute bottom-20 right-4 md:right-6 z-10" style={{ animation: "fadeIn 2s ease-out 1s both" }}>
+          <div className="fixed top-4 left-4 md:top-6 md:left-6 z-40" style={{ animation: "fadeIn 2s ease-out 1s both" }}>
             <p
-              className="text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] italic flex items-center gap-2"
-              style={{ fontFamily: "var(--font-fell)", color: "#c5a878", opacity: 0.4 }}
+              className="text-[10px] md:text-[11px] tracking-[0.2em] md:tracking-[0.3em] italic flex items-center gap-2 px-3 py-2 rounded-sm"
+              style={{
+                fontFamily: "var(--font-fell)",
+                color: "#e8b870",
+                backgroundColor: "rgba(232, 184, 112, 0.08)",
+                border: "1px solid rgba(232, 184, 112, 0.2)",
+                backdropFilter: "blur(8px)",
+                opacity: 0.85,
+              }}
             >
               <span style={{ color: "#e8b870" }}>✦</span>
-              <span>{visitCount.toLocaleString()} souls have wandered here</span>
+              <span>{visitCount.toLocaleString()} souls wandered here</span>
             </p>
           </div>
         )}
+
 
         {/* 滚动提示 */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center z-10" style={{ animation: "fadeInUp 1.5s ease-out 2.5s both" }}>
@@ -374,7 +382,7 @@ export default function Home() {
         }
         @keyframes fadeIn {
           from { opacity: 0; }
-          to { opacity: 0.4; }
+          to { opacity: 0.85; }
         }
         @keyframes scaleIn {
           from { opacity: 0; transform: scale(0.95); }
