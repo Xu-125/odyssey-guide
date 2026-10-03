@@ -81,7 +81,8 @@ export default function Home() {
 
         const res = await fetch(url);
         const data = await res.json();
-        setVisitCount(data.count);
+        const count = Number(data?.count ?? data?.value);
+        setVisitCount(Number.isFinite(count) ? count : null);
 
         if (lastVisit !== today) {
           localStorage.setItem("odyssey_last_visit", today);
