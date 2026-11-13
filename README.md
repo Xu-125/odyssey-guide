@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Odyssey · 人生坐标互动体验
 
-## Getting Started
+围绕人生过渡期的迷茫，把心理学概念、文字叙事和交互体验放在同一个网站里。徐皓萱 / Hazel Xu 的个人独立项目。
 
-First, run the development server:
+**[进入正式体验 →](https://xu-125.github.io/odyssey-guide/)** · [返回个人作品集](https://xu-125.github.io/portfolio/)
+
+## 可以体验什么
+
+- 从星空与一封信进入主题。
+- 点击成年初显期、阈限状态等概念，查看解释。
+- 进入探索、结果与个人记录等页面。
+
+这是内容与交互项目，不是心理诊断或治疗工具。
+
+## 本地开发
+
+源码在 `src/`；当前仓库也保留已有的静态导出文件。以 `package.json` 的依赖和脚本为准。
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+默认在 `http://localhost:3000` 预览。
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+部署时按当前项目配置生成静态站点，并检查 GitHub Pages 的路径前缀、子页和资源是否正常。不要只修改已导出的页面而忘记同步源码。
 
-## Learn More
+## 关于复用
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+文字、视觉素材与代码分开看待；公开仓库不自动授予所有素材的转载或商用权利。复用前请检查来源与适用授权。
